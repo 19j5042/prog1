@@ -21,3 +21,17 @@ def binomial(m,n):
     return int(fact(m)/(fact(n)));
 
 print(binomial(5,3))
+
+
+#Ver2
+
+def add1(x): return x+1
+
+def fact(x):
+    if x>1: return x*fact(x-1);
+    else: return 1;
+    
+def binomial(m,n):
+    return int(fact(m)/fact(n)/fact(m-n));
+
+print(binomial(5,3))
