@@ -1,2 +1,2 @@
 for x in range(11):
-    print(x*10,end="")
+    print(x*10,end=" ")
