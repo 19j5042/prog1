@@ -1,2 +1,2 @@
 for x in range(100):
-    print(x%2,end="")
+    print(x%2,end=" ")
