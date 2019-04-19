@@ -1,0 +1,5 @@
+for x in range(3):
+    print("Hello")
+    print("World")
+for x in range(3):
+    print("Hello World")
