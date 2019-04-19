@@ -1,0 +1,2 @@
+for x in range(201):
+    print(100-x,end="")
