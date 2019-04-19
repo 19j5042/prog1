@@ -1,2 +1,2 @@
 for x in range(9):
-    print((x+2)*5,end="")
+    print((x+2)*5,end=" ")
