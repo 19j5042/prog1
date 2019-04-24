@@ -1,0 +1,7 @@
+import random
+
+pokemon=list(range(1,152))
+
+print(random.cohice(pokemon))
+
+paizaなんかrandom使えないらしくて詰んでる
