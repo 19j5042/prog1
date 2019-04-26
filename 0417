@@ -1,0 +1,6 @@
+b=0
+for a in range(7):
+    a=a*5
+    a=a+10
+    b=b+a
+    print(b,end=" ")
