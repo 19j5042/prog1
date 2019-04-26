@@ -1,0 +1,2 @@
+for x in range(10,41,5):
+    print(x,end=" ")
