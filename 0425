@@ -1,0 +1,7 @@
+a=9
+b=10
+c=17
+l=a+b+c
+p=l/2
+S=(p*(p-a)*(p-b)*(p-c))**p
+print(S)
