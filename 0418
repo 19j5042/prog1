@@ -1,0 +1,6 @@
+a=10
+b=0
+for a in range(7):
+    b=(b+((a*5)+10))
+    c=b/(a+1)
+    print(c,end=" ")
