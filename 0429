@@ -1,0 +1,8 @@
+a=20853
+b=3843
+for x in range(5):
+    r=a%b
+    print("%d = %d * %d + %d"% (a,b,a//b,r))
+    a=b
+    b=r
+print("gcd : %d"%a)
