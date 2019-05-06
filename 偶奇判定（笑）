@@ -1,0 +1,8 @@
+def osero(x):
+    x=x%2
+    m="奇数"
+    n="偶数"
+    if x>0:return print(m)
+    else:return print(n)
+    
+osero(5)
