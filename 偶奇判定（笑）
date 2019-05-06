@@ -6,3 +6,15 @@ def osero(x):
     else:return print(n)
     
 osero(5)
+
+
+#ver.1.1
+def osero(x):
+    x=x%2
+    m="奇数"
+    n="偶数"
+    if x>0:return m
+    elif x==0:return print("0")
+    else:return n
+
+osero(0)
