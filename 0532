@@ -1,0 +1,6 @@
+n=6
+r=4
+bunbo=1
+for x in range(1,r+1):
+    bunbo=bunbo*x
+print(bunbo)
