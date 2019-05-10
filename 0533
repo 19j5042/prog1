@@ -1,0 +1,6 @@
+n=6
+r=4
+bunshi=1
+for y in range(n,n-r,-1):
+    bunshi=bunshi*y
+print(bunshi)
