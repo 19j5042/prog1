@@ -8,7 +8,7 @@ def osero(x):
 osero(5)
 
 
-#ver.1.1
+#ver 1.1
 def osero(x):
     x=x%2
     m="奇数"
@@ -18,3 +18,14 @@ def osero(x):
     else:return n
 
 osero(0)
+
+#ver 1.2
+def osero(x):
+    y=x%2
+    m="奇数"
+    n="偶数"
+    if x==0:return 0 
+    elif y>0:return m
+    else:return n
+
+print(osero(4))
