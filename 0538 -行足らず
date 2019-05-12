@@ -1,8 +1,8 @@
-n=7
-for a in range(n):
-    for b in range(n-(a+1)):
+n=4
+for dan in range(n):
+    for b in range(n-(dan+1)):
         print("\t",end="")
-    for c in range(a+1):
+    for c in range(dan+1):
         print("*\t\t",end="")
     print()
 
