@@ -6,4 +6,4 @@ for dan in range(n):
         print("*\t\t",end="")
     print()
 
-あと3行……
+こっちのが先にできた
