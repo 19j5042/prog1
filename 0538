@@ -1,0 +1,10 @@
+n=4
+for dan in range(n):
+    for a in range(n-(dan+1)):
+        print("\t",end="")
+    print("*",end="")
+    for c in range(dan):
+        for b in range(2):
+            print("\t",end="")
+        print("*",end="")
+    print()
