@@ -23,3 +23,18 @@ for a in range(n):
             print("\t",end="")
         print("*",end="")
     print()
+
+#ver1.2.1
+n=7
+for a in range(n):
+    y=round(n/2)
+    x=abs(y-(a+1))
+    z=abs(y-a)
+    for b in range(x):
+        print("\t",end="")
+    print("*",end="")
+    for c in range(y-x):
+        for d in range(2):
+            print("\t",end="")
+        print("*",end="")
+    print()
