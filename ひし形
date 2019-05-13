@@ -1,0 +1,11 @@
+n=5
+for a in range(n):
+    x=abs(2-a)
+    for b in range(x):
+        print("\t",end="")
+    print("*",end="")
+    for c in range(2-x):
+        for d in range(2):
+            print("\t",end="")
+        print("*",end="")
+    print()
