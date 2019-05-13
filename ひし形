@@ -38,3 +38,23 @@ for a in range(n):
             print("\t",end="")
         print("*",end="")
     print()
+    
+#ver2
+m=5
+n=m-1
+for a in range(m):
+    for b in range(m-(a+1)):
+        print("\t",end="")
+    for c in range(a):
+        print("*",end="")
+        print("\t",end="")
+        print("\t",end="")
+    print("*")
+for d in range(n):
+    for e in range(d+1):
+        print("\t",end="")
+    for f in range(n-(d+1)):
+        print("*",end="")
+        print("\t",end="")
+        print("\t",end="")
+    print("*")
