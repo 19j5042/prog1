@@ -1,0 +1,15 @@
+for x in range(1,16):
+    if(x<4):
+        print(x,end=" ")
+    else:
+        if(x<7):
+            print("*",end=" ")
+        else:
+            if(x<10):
+                print(x,end=" ")
+            else:
+                if(x<13):
+                    print("*",end=" ")
+                else:
+                    print(x,end=" ")
+        
