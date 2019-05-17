@@ -1,0 +1,10 @@
+a=8989
+b=5555
+for x in range(100):
+    r=a%b
+    print(a,"=",b,"*",a//b,"+",r)
+    if(r==0):
+        break
+    a=b
+    b=r
+print("gcd :",b)
