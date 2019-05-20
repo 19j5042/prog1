@@ -1,0 +1,69 @@
+HP=100
+MP=50
+damege=-5
+attack=-3
+win=3
+cure_HP=5
+cure_MP=-5
+battle_count=0
+exp=10
+total_exp=0
+level=1
+
+for a in range(100):
+    battle_count=battle_count+1
+    HP=HP+damege+attack+win
+    total_exp=total_exp+exp
+    if(total_exp==100):
+        level=level+〇
+        total_exp=0
+    if(MP>=□ and HP<=49):
+        MP=MP+cure_MP
+        HP=HP+cure_HP
+    if(HP<=△):
+        break
+
+上記のプログラムに存在する記号（〇、□、△）に適切な数字を入れ、下記のような動作をするプログラムを完成させろ。
+
+とあるRPGの戦闘システムを考える。何度戦闘するかは分からないためこれは仮に100と置く。
+一度の戦闘で5HPのダメージを受け、3HP消費して敵に攻撃をし、勝利時には3HP回復するとともにbattle_countが1増える。
+勝利時には10のexpを得られ、total_expが100たまるとレベルが1上がりtotal_expは0に戻る。
+HPが49以下になると終了時に5MP消費して5HP回復する。これはMPが1以上の時発動する。
+HPが9以下になるとこのプログラムは停止する。
+
+また、完成したプログラムでbattle_countとlevelの数値は最終的にどうなっているか答えよ。
+
+回答時、〇、□、△、battle_count、levelの順に数字のみ記入せよ
+
+
+～完成したプログラム～
+
+HP=100
+MP=50
+damege=-5
+attack=-3
+win=3
+cure_HP=5
+cure_MP=-5
+battle_count=0
+exp=10
+total_exp=0
+level=1
+
+for a in range(100):
+    battle_count=battle_count+1
+    HP=HP+damege+attack+win
+    total_exp=total_exp+exp
+    if(total_exp==100):
+        level=level+1
+        total_exp=0
+    if(MP>=1 and HP<=49):
+        MP=MP+cure_MP
+        HP=HP+cure_HP
+    if(HP<=9):
+        break
+print(battle_count)
+print(level)
+
+～答え～
+119293
