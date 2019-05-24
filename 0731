@@ -1,0 +1,22 @@
+def is_prime(n):
+    count=0
+    for a in range(1,100):
+        if n%a==0:
+            count+=1
+    if count==2:
+        return 1
+    else:
+        return 0
+def fermat_table_content(p):
+    print(p,end="")
+    print(":",end=" ")
+    for a in range(1,9):
+        print(a*p,end=" ")
+    print()
+def fermat_table():
+    for n in range(11,100):
+        check=is_prime(n)
+        if(check==1):
+            fermat_table_content(n)
+
+fermat_table()
