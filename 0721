@@ -1,0 +1,8 @@
+def emoji():
+    print("(",end="")
+    print("^",end="")
+    print("_",end="")
+    print("^",end="")
+    print(")",end="")
+
+emoji()
