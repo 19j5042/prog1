@@ -1,0 +1,17 @@
+def comb(n,r):
+    bunbo=1
+    bunshi=1
+    for a in range(1,r+1):
+        bunbo*=a
+    for b in range(r):
+        bunshi*=(n-b)
+    c=bunshi/bunbo
+    return c
+def pascal(m):
+    for x in range(m+1):
+        for y in range(x+1):
+            d=comb(x,y)
+            print(d,end=" ")
+        print()
+
+pascal(4)
