@@ -11,3 +11,17 @@ def heron_table():
                     print(a,b,c)
 
 heron_table()
+
+def heron(a,b,c):
+    l=a+b+c
+    p=l/2
+    s=(p*(p-a)*(p-b)*(p-c))**(1/2)
+    return s
+def heron_table():
+    for a in range(1,101):
+        for b in range(a,101):
+            for c in range(b,101):
+                if (heron(a,b,c)==(a+b+c)):
+                    print(a,b,c)
+
+でもOK
