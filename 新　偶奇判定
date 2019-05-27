@@ -1,0 +1,7 @@
+def EorO(x):
+    y=x%2
+    if x==0:return "\"0\""
+    elif y>0:return 1
+    else:return 0
+
+#偶数＝0、奇数＝1
