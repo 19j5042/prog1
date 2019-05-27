@@ -3,3 +3,42 @@
 ・NOT,AND,OR,NOIRとかの論理回路再現。遇奇判定と組み合わせる
 ・難易度ゲロ甘の奴。本命。これ以外は全部趣味
 ・パスカルの三角形完全再現
+
+1  def comb(n,r):
+2      bunbo=1
+3      for a in range(1,r+1):
+4          bunbo*=a
+5      bunshi=1
+6      for b in range(r):
+7          bunshi*=(n-b)
+8      c=bunshi/bunbo
+9      return c
+10 def pascal(m):
+11     for x in range(m+1):
+12         for d in range(m-x):
+13             print("\t",end="")
+14         for y in range(x+1):
+15             z=comb(x,y)
+16             if y!=x:
+17                 for e in range(2):
+18                     print("\t",end="")
+19             else:
+20                 break
+21         print()
+22 
+23 
+24 pascal(3)
+
+上記のプログラムに以下の一行を挿入し、下記のような動作をするプログラムを完成させろ。
+回答する際、挿入する前後の行数を記入せよ。また、1行目の前に挿入する際は01、24行目の後に挿入する際は2425と回答せよ。
+
+            print(z,end="")
+
+出力結果が以下の通りになるようにプログラムを完成させよ。
+
+      1.0
+		1.0		1.0
+	1.0		2.0		1.0
+1.0		3.0		3.0		1.0
+
+答え　1516
