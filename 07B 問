@@ -1,0 +1,13 @@
+count=0
+def quadratic_formula(a,b,c):
+    global count
+    d=(b**2)-(4*a*c)
+    if(d>=0):
+        count+=1
+    return count
+
+for a in range(-10,11):
+    for b in range(-10,11):
+        for c in range(-10,11):
+            x=quadratic_formula(a,b,c)
+print(x)
