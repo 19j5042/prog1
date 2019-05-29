@@ -1,0 +1,17 @@
+def quadratic_formula(a,b,c):
+    d=(b**2)-(4*a*c)
+    if(d>=0):
+        if (d>0):
+            r1=(-b+(d**1/2))/(2*a)
+            r2=(-b-(d**1/2))/(2*a)
+            print("Two Solutions found :", r1, r2)
+        else:
+            if(d==0):
+                r=-b/(2*a)
+                print("One Solution found :", r)
+            else:
+                print("No solution found.")
+    else:
+        print("a is zero.")
+
+quadratic_formula(1,-2,1)
