@@ -1,0 +1,6 @@
+def bmi_1(h,w):
+    b=(w/(h**2))*10000
+    return b
+
+b=bmi_1(160,60)
+print("BMI :",b)
