@@ -1,0 +1,9 @@
+a=[[0,1,2],[0,1,2],[0,1,2]]
+a[0][0]=1
+a[0][1]=2
+a[2][1]=0
+a[2][2]=1
+for x in range(3):
+    for y in range(3):
+        print(a[x][y],end=" ")
+    print()
