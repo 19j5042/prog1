@@ -1,0 +1,8 @@
+m=5
+c=[[0 for y in range(m)] for x in range(m)]
+for n in range(m):
+    for r in range(n+1):
+        if(r==n or r==0):
+            c[n][r]=1
+        print(c[n][r],end=" ")
+    print()
