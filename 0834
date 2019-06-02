@@ -4,5 +4,7 @@ for n in range(m):
     for r in range(n+1):
         if(r==n or r==0):
             c[n][r]=1
+for n in range(m):
+    for r in range(n+1):
         print(c[n][r],end=" ")
     print()
