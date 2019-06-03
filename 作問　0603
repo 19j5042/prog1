@@ -1,0 +1,63 @@
+
+0 
+1 2 
+3 4 5 
+6 7 8 9 
+10 11 12 13 14 
+
+上記のような出力をするコードを以下の中から選べ
+
+1、
+m=5
+a=[[0 for y in range(m)] for x in range(m)]
+for x in range(m):
+    for y in range(x+1):
+        if x>=2:
+            a[x][y]=a[x-1][x-1]+y
+        else:
+            a[x][y]=x+y
+for x in range(m):
+    for y in range(x+1):
+        print(a[x][y],end=" ")
+    print()
+
+2、
+m=5
+a=[[0 for y in range(m)] for x in range(m)]
+for x in range(m):
+    for y in range(x+1):
+        if x>=1:
+            a[x][y]=a[x-1][x-1]+y
+        else:
+            a[x][y]=x+y
+for x in range(m):
+    for y in range(x+1):
+        print(a[x][y],end=" ")
+    print()
+
+3、
+m=5
+a=[[0 for y in range(m)] for x in range(m)]
+for x in range(m):
+    for y in range(x+1):
+        a[x][y]=x+y
+for x in range(m):
+    for y in range(x+1):
+        print(a[x][y],end=" ")
+    print()
+
+4、
+m=5
+a=[[0 for y in range(m)] for x in range(m)]
+for x in range(m):
+    for y in range(x+1):
+        if x>=2:
+            a[x][y]=a[x-1][x-1]+y+1
+        else:
+            a[x][y]=x+y
+for x in range(m):
+    for y in range(x+1):
+        print(a[x][y],end=" ")
+    print()
+
+答え：4
