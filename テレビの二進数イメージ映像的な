@@ -10,3 +10,21 @@ for x in range(m):
     for z in range(m-x):
         print(c[z][x],end=" ")
     print()
+
+#ver.1.1　行数とか増えたよ
+m=8
+c=[[0 for a in range(m)] for b in range(m)]
+for n in range(m):
+    for r in range(m):
+        if ((n+1)+r)%2==0:
+            c[n][r]=1
+for x in range(m):
+    for y in range(x+1):
+        print(c[x][y],end=" ")
+    for z in range(x):
+        print(c[z][x],end=" ")
+    for o in range(m-x):
+        print(c[o][x],end=" ")
+    for o in range(m-x):
+        print(c[o][x],end=" ")
+    print()
