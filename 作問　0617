@@ -1,0 +1,49 @@
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+
+コマンドプロンプトで.shファイルを実行した際上記のように出力される.pyファイルを以下の中から選べ。
+
+1、
+def filen(n):
+    return "file" + str(n) + ".py"
+for n in range(1,6):
+    print("echo \"for x in range( ", n, " ):\" > ", filen(n))
+    print("echo \"	print(x, end=\\\" \\\")\" >> ", filen(n))
+    print("echo \"print()\" >> ", filen(n))
+for n in range(1,6):
+    print("python3 ", filen(n))
+
+2、
+def filen(n):
+    return "file" + str(n) + ".py"
+for n in range(1,6):
+    print("echo \"for x in range( 1,", n+1, " ):\" > ", filen(n))
+    print("echo \"	print(x, end=\\\" \\\")\" >> ", filen(n))
+for n in range(1,6):
+    print("python3 ", filen(n))
+
+3、
+def filen(n):
+    return "file" + str(n) + ".py"
+for n in range(101,201):
+    print("echo \"for x in range( 1,", n+1, " ):\" > ", filen(n))
+    print("echo \"	print(x, end=\\\" \\\")\" >> ", filen(n))
+    print("echo \"print()\" >> ", filen(n))
+for n in range(101,201):
+    print("python3 ", filen(n))
+
+4、
+def filen(n):
+    return "file" + str(n) + ".py"
+for n in range(1,6):
+    print("echo \"for x in range( 1,", n+1, " ):\" > ", filen(n))
+    print("echo \"	print(x, end=\\\" \\\")\" >> ", filen(n))
+    print("echo \"print()\" >> ", filen(n))
+for n in range(1,6):
+    print("python3 ", filen(n))
+
+答え　4
