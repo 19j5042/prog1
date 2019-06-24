@@ -1,0 +1,48 @@
+
+1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+
+実行結果が以上のようになるプログラムを以下の中から選べ
+
+1、
+#include<stdio.h>
+int main(void){
+	for( int x=0; x<20; x++){
+		printf("%d ", (x+1)%2);
+	}
+	printf("\n");
+	return 0;
+
+}
+
+2、
+#include<stdio.h>
+int main(void){
+	for( int x=0; x<30; x++){
+		printf("%d ", x%2);
+	}
+	printf("\n");
+	return 0;
+
+}
+
+3、
+#include<stdio.h>
+int main(void){
+	for( int x=0; x<20; x++){
+		printf("%d ", x%2);
+	}
+	printf("\n");
+	return 0;
+
+}
+
+4、
+#include<stdio.h>
+int main(void){
+	for( int x=0; x<30; x++){
+		printf("%d ", (x+1)%2);
+	}
+	printf("\n");
+	return 0;
+
+}
